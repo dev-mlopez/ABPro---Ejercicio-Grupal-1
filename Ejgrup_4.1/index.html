@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empresas e Importaciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <h1>Registro de Empresas e Importaciones</h1>
+
+    <div class="form-container">
+        <h2>Registrar Empresa</h2>
+        <label for="empresa_id">ID Empresa:</label>
+        <input type="text" id="empresa_id">
+        <label for="empresa_nombre">Nombre Empresa:</label>
+        <input type="text" id="empresa_nombre">
+        <label for="empresa_rut">RUT Empresa:</label>
+        <input type="text" id="empresa_rut">
+        <input type="button" value="Registrar Empresa" onclick="registrarEmpresa()">
+    </div>
+
+    <div class="form-container">
+        <h2>Registrar Importación</h2>
+        <label for="importacion_id">ID Importación:</label>
+        <input type="text" id="importacion_id">
+        <label for="importacion_producto">Producto:</label>
+        <input type="text" id="importacion_producto">
+        <label for="importacion_cantidad">Cantidad:</label>
+        <input type="number" id="importacion_cantidad">
+        <label for="importacion_precio">Precio Unitario:</label>
+        <input type="number" id="importacion_precio" step="0.01">
+        <label for="empresa_select">Empresa:</label>
+        <select id="empresa_select"></select>
+        <input type="button" value="Registrar Importación" onclick="registrarImportacion()">
+    </div>
+
+    <div id="result">
+        <h2>Resultados</h2>
+        <div id="total_importaciones"></div>
+        <div id="total_productos"></div>
+    </div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
