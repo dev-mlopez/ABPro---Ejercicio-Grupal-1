@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupal 4.1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+</head>
+<body>
+    <img src="img/descarga.png" id="mi-imagen">
+    <div class="container">
+        <h1 class="text-center">Aduana de Chile - Registro de Importaciones</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Empresas</h2>
+                <ul id="empresas-list">
+                    <!-- lista de empresas se traera aquí -->
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Importaciones</h2>
+                <ul id="importaciones-list" style="display: none;">
+                    <!-- lista de importaciones se traera aquí -->
+                </ul>
+                <ul id="importaciones-por-empresa-list" style="display: none;">
+                    <!-- lista de importaciones por empresa se traera aquí -->
+                </ul>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="agregar-empresa-btn">Agregar Empresa</button>
+        <button class="btn btn-primary" id="agregar-importacion-btn">Agregar Importación</button>
+        <button class="btn btn-primary" id="mostrar-importaciones-por-empresa-btn">Mostrar Importaciones por Empresa</button>
+    </div>
+    <footer>
+        <p>Sala 7 (2024) | Nelson Camus - Patricio Gallardo - Mauricio López - Cristian Blanco - Grupal 4.1</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/empresa.js"></script>
+    <script src="js/importacion.js"></script>
+</body>
+</html>
